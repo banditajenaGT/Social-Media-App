@@ -1,0 +1,143 @@
+:root {
+    --blue: rgb(255, 255, 255);
+}
+
+.dialogueBox {
+    min-width: 500px;
+    height: 100vh;
+    padding: 2vmax;
+}
+
+.commentForm {
+    display: flex;
+    margin: 1vmax;
+}
+
+.commentForm input {
+    width: 100%;
+    padding: 1vmax 2vmax;
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, 0.219);
+    border-radius: 30px 0 0 30px;
+    font: 100 1vmax "Roboto", sans-serif;
+}
+
+.commentForm button {
+    border-radius: 0 30px 30px 0;
+}
+
+.post {
+    width: 70%;
+    background-color: var(--blue);
+    /* border-radius: 5px; */
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.185); */
+    padding: 0 1vmax 0vmax;
+    /* margin: 2vmax; */
+}
+
+.postHeader {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 1vmax;
+}
+
+.postHeader button {
+    border-radius: 100%;
+    color: rgba(0, 0, 0, 0.466);
+}
+
+.divCenter {
+    display: flex;
+    align-items: center;
+    margin: 1vmax 0;
+}
+
+.post img {
+    width: 100%;
+}
+
+.postDetails {
+    display: flex;
+    padding: 0 0.5vmax;
+}
+
+.postDetails a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.568);
+}
+
+.btndecoration {
+    border: none;
+    background-color: var(--blue);
+    cursor: pointer;
+    margin: 0 0.5vmax;
+}
+
+.postReaction {
+    display: flex;
+    position: relative;
+
+}
+
+.postReaction button {
+    border: none;
+    background-color: var(--blue);
+    color: rgba(0, 0, 0, 0.705);
+    margin: 0 1vmax 0 0.5vmax;
+    transition: all 0.3s;
+}
+
+.item:nth-child(4) {
+    margin-left: auto;
+}
+
+.postReaction button:hover {
+    transform: scale(1.1);
+}
+
+.container {
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    top: -6vmax;
+    left: 2vmax;
+    border-radius: 5vmax;
+    box-shadow: 0px 0px 17px 0px black;
+}
+
+.fab {
+    font-size: 3vmax;
+    margin: 1vmax;
+}
+
+.fab:hover {
+    transform: scale(1.2);
+    transition: transform 0.75s;
+}
+
+.fa-whatsapp {
+    color: #25d366;
+}
+
+.fa-facebook {
+    color: #1877f2;
+}
+
+.fa-twitter {
+    color: #1da1f2;
+}
+
+.fa-linkedin {
+    color: #004182;
+}
+
+.fa-pinterest {
+    color: #e60023;
+}
+
+@media screen and (max-width:700px) {
+    .container {
+        top: -6vmax;
+        left: 1vmax;
+    }
+}

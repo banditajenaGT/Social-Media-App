@@ -1,0 +1,42 @@
+.home{
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 1fr 20vw;
+    height: 100vh;
+}
+.homeleft{
+    background-image: linear-gradient(to right,yellow,rgb(241, 61, 61));
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2vmax;
+    box-sizing: border-box;
+}
+.homeright{
+    padding: 2vmax;
+    box-sizing: border-box;
+    overflow-y: auto;
+}
+.homeUser{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.589);
+    transition:all 0.4s;
+}
+.homeUser:hover{
+    transform: scale(1.05);
+}
+.homeUser img{
+    height: 3vmax;
+    width: 3vmax;
+    margin: 1vmax;
+    border-radius: 100%;
+    border: 3px solid rgb(238, 100, 100);
+}
+@media screen and (max-width:800px) {
+    .home{
+        grid-template-columns: 1fr 20vw;
+    }
+}

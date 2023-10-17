@@ -1,0 +1,68 @@
+.updateProfile{
+    min-height: 100vh;
+    background-image: linear-gradient(to right , yellow,white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2vmax;
+    box-sizing: border-box;
+}
+
+.updateProfileForm{
+    background-color: white;
+    width: 50%;
+    border-radius: 2vmax;
+    box-sizing: border-box;
+    padding: 2vmax;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.updateProfileInput{
+    box-sizing: border-box;
+    padding: 1vmax 2vmax;
+    width: 80%;
+    border-radius: 40px;
+    border: 1px solid blueviolet;
+    margin: 1.5vmax;
+    font: 100 1.2rem "Roboto",sans-serif;
+    outline: none;
+}
+
+.updateProfileForm input[type='file']{
+    border-radius: 30px;
+    margin: 2vmax;
+}
+
+.updateProfileForm input[type='file']::-webkit-file-upload-button{
+    background-color: rgb(47, 0, 255);
+    color: white;
+    border-radius: 30px;
+    margin: 2vmax;
+    width: 80%;
+    padding: 1vmax;
+    border: none;
+    font: 100 1.2rem "Roboto",sans-serif;
+}
+
+@media screen and (max-width:700px){
+    .updateProfileForm{
+        width: 100%;
+    }
+    .updateProfileForm input{
+        padding: 4vmax 8vamx;
+        margin: 2vmax;
+        font: 100 1.2rem "Roboto",sans-serif;
+        margin: 4vamx;
+    }
+    .updateProfileForm input[type="file"]{
+        width: 100%;
+    }
+    .updateProfileForm input[type='file']::-webkit-file-upload-button{
+        align-items: center;
+        text-decoration: none;
+        color: rgba(12, 1, 1, 0.363);
+       
+    }
+}

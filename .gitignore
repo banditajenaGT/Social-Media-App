@@ -1,0 +1,15 @@
+/node_modules
+/backend/config/config.env
+/fontend/node_modules
+/fontend/.pnp
+/fontend/.pnp.js
+
+/fontend/coverage
+
+/fontend/build
+
+/fontend/.DS_Store
+/fontend/.env.local
+/fontend/.env.development.local
+/fontend/.env.test.local
+/fontend/.env.production.local
